@@ -1,0 +1,12 @@
+
+# 1
+fuente: https://www.freepik.es/
+recurso: images/Dumpling.png
+
+# 2
+fuente: https://www.flaticon.es/
+recurso: images/flecha.png
+
+# 3 
+fuente: https://leonardo.ai/
+recurso: [images/Xiao_Long_Bao.jpg, images/Tang_Yuan.jpg, images/Gyoza.jpg]
