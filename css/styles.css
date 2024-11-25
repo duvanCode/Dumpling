@@ -458,8 +458,7 @@ hr {
     flex-direction: column;
     align-items: center;
     border-left: 1px solid rgba(74, 52, 37, 0.2);
-    padding-left: 32px;
-
+    padding-left: 32px; 
 }
 .footer-logo {
     max-width: 60px;
@@ -494,13 +493,10 @@ hr {
 }
 @media (max-width: 768px) {
     .footer-column, .footer-logo-social {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         border-left: none;
         padding-left: 0;
-        /* align-items: flex-start; */
+        align-items: center;
     }
 }
 
