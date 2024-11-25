@@ -14,15 +14,15 @@
     <nav>
         <a href="./../index.html"><img src="./../favicon.ico" alt="Home" style="height: 40px;"></a>
 
-        <img class="menu-movil" src="./../images/list.svg" alt="">
+        <img class="menu-mobile" src="./../images/list.svg" alt="">
 
         <ul class="menu-pc">
             <li><a class="a-before" href="./Xiao-Long-Bao.html">Xiao Long Bao</a></li>
             <li><a class="a-before" href="./Gyoza.html">Gyoza</a></li>
         </ul>
 
-        <ul class="menu-movil-ul">
-            <li><a class="a-before"><img class="menu-movil-close" src="./../favicon.ico" alt="Home" style="height: 40px;"></a></li>
+        <ul class="menu-mobile-ul">
+            <li><a class="a-before"><img class="menu-mobile-close" src="./../favicon.ico" alt="Home" style="height: 40px;"></a></li>
             <li><a class="a-before" href="./Xiao-Long-Bao.html">Xiao Long Bao</a></li>
             <li><a class="a-before" href="./Gyoza.html">Gyoza</a></li>
         </ul>
@@ -38,20 +38,20 @@
                 </div>
             </div>
 
-            <div class="prmary-text-container">
+            <div class="primary-text-container">
                 <h1>Tang Yuan (Sweet Dumplings)</h1>
                 <p>Celebrate sweetness and tradition with Tang Yuan, a Chinese dessert full of cultural significance. These soft glutinous rice balls, filled with black sesame or peanut paste, are served in a sweet ginger broth that comforts the soul. Perfect for special occasions like the Lantern Festival, Tang Yuan symbolize unity and harmony. Learn how to prepare them and share this warm and love-filled dessert with your family.</p>
-                <h3 class="frase">! I love Dumpling ♡!</h3>
+                <h3 class="phrase">! I love Dumpling ♡!</h3>
             </div>
         </div>
 
         <!-- Page content -->
         <section class="content-page" style="display: flex; justify-content: center;">
             <div class="">
-                <div class="Ingredientes-contain">
+                <div class="ingredients-contain">
                     <h2 class="recipe-title">~ Ingredients ~</h2>
                     <br>
-                    <div class="ingredientes-box">
+                    <div class="ingredients-box">
                         <ul>
                             <li><p class="recipe-description">200 g of glutinous rice flour</p></li>
                             <li><p class="recipe-description">120 ml of hot water</p></li>
@@ -111,12 +111,12 @@
     <script>
         AOS.init();
 
-        document.querySelector('.menu-movil').addEventListener('click',(event)=>{
-            document.querySelector('.menu-movil-ul').style.display = 'block';
+        document.querySelector('.menu-mobile').addEventListener('click', (event) => {
+            document.querySelector('.menu-mobile-ul').style.display = 'block';
         });
 
-        document.querySelector('.menu-movil-close').addEventListener('click',(event)=>{
-            document.querySelector('.menu-movil-ul').style.display = 'none';
+        document.querySelector('.menu-mobile-close').addEventListener('click', (event) => {
+            document.querySelector('.menu-mobile-ul').style.display = 'none';
         });
     </script>
 </body>

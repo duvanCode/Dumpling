@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 h1, h2, h3, p{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -16,8 +15,7 @@ h1, h2, h3, p{
     color: orange;
 }
 
-
-/* Estilos básicos */
+/* Basic styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -27,7 +25,7 @@ body {
     min-height: 100vh;
 }
 
-/* Estilos del menú */
+/* Menu styles */
 nav {
     padding: 1rem 0;
     display: flex; justify-content: space-between;padding-left: 30px; padding-right: 30px;
@@ -54,25 +52,25 @@ nav ul li a {
     color: orange;
     font-weight: bold;
     transition: color 0.3s;
-    transition: all 0.5seg;
-    text-decoration: none; /* Quita el subrayado por defecto */
-    position: relative; /* Necesario para posicionar el pseudoelemento */
+    transition: all 0.5s;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Necessary to position the pseudo-element */
 }
 
 .a-before:hover {
     color: #ff8527;
-    transition: all 0.5seg;
-    left: 0; /* Al pasar el cursor, el subrayado se desplaza hacia la izquierda */
+    transition: all 0.5s;
+    left: 0; /* On hover, the underline moves to the left */
     width: 100%;
 }
 
 .a-before:before {
     content: "";
     position: absolute;
-    bottom: -2px; /* Ajusta la posición del subrayado */
+    bottom: -2px; /* Adjusts the position of the underline */
     height: 2px;
-    background-color: #ff8527; /* Color del subrayado */
-    transition: all 0.3s ease-in-out; /* Animación al pasar el cursor */
+    background-color: #ff8527; /* Underline color */
+    transition: all 0.3s ease-in-out; /* Animation on hover */
     width: 0;
 }
 
@@ -81,32 +79,29 @@ a {
     color: orange;
     font-weight: bold;
     transition: color 0.3s;
-    transition: all 0.5seg;
-    text-decoration: none; /* Quita el subrayado por defecto */
-    position: relative; /* Necesario para posicionar el pseudoelemento */
+    transition: all 0.5s;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Necessary to position the pseudo-element */
 }
-
 
 .a-before:hover:before {
     width: 100%;
 }
 
-
 .content-a{
     position: relative;
 }
 
-/* Estilos del footer */
+/* Footer styles */
 footer {
     background-color: #e9c99a;
     color: black;
     text-align: center;
     padding: 1rem 0;
     margin-top: auto;
-    
 }
 
-/*  estilo barra de scroll */
+/* Scroll bar style */
 .scroll-box::-webkit-scrollbar {
     -webkit-appearance: none;
 }
@@ -132,7 +127,6 @@ footer {
 .scroll-box::-webkit-scrollbar-track {
     border-radius: 3px;  
 }
-
 
 body::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -160,20 +154,17 @@ body::-webkit-scrollbar-track {
     border-radius: 10px;  
 }
 
-
-
-/* Móvil primero */
+/* Mobile first */
 body {
     font-size: 16px;
     margin: 0;
 }
 
-.flecha-menu{
+.arrow-menu{
     opacity: 0;
 }
 
-
-.flecha-menu{
+.arrow-menu{
     position: absolute;
     top: 10%;
     right: 8%;
@@ -181,17 +172,14 @@ body {
     pointer-events: none;
 }
 
-
-.prmary-text-container{
+.primary-text-container{
     color: wheat;
     /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
     margin-left: 15px;
     padding-top: 8rem;padding-top: 8rem;
 }
 
-
-
-.prmary-text-container p{
+.primary-text-container p{
     margin-top: 20px;
     margin-right: 10px;
     color: #a3a3a3;
@@ -199,8 +187,7 @@ body {
     font-weight: 300;
 }
 
-
-.frase{
+.phrase{
     max-width: 710px;
     margin-top: 60px;
     font-family: "Allura", cursive;
@@ -209,9 +196,7 @@ body {
     font-size: 7vh;
     color: orange;
     transform: rotateZ(5deg);
-
 }
-
 
 .content-page{
     position: relative;
@@ -219,12 +204,9 @@ body {
     bottom: 0;
     background: white;
     /* background: linear-gradient(to bottom, transparent,wheat); */
-
 }
 
-
-
-    .recipes-container {
+.recipes-container {
     display: grid;
     width: 100%;
     margin: 0 auto;
@@ -289,7 +271,6 @@ body {
     /* transform: scale(1.05); */
     transition: .1s;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
 }
 
 .read-more:hover:active {
@@ -297,89 +278,84 @@ body {
     background-color: wheat ;
     color: orange;
     transition: .1s;
-
 }
 
-
 .recipe-card:nth-child(odd) {
-background-color: #fff;
-
+    background-color: #fff;
 }
 
 .recipe-card:nth-child(even) {
     background-color: #fff0e6;
-
 }
 
 .recipe-card:nth-child(even) .recipe-image {
     order: -1;
 }
 
-
-.content-end
-{
+.content-end {
     justify-items: end;
     text-align: end;
 }
 
-.Ingredientes-contain h2{
+.ingredients-contain h2 {
     color: rgba(0, 0, 0,.7);
 }
 
-.Ingredientes-contain p{
+.ingredients-contain p {
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
-    color: black
+    color: black;
 }
-.Ingredientes-contain{
 
+.ingredients-contain {
     /* background-color: rgb(245, 232, 207); */
     padding: 2rem;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    background-size: 350px 350px; /* Hace la imagen más pequeña */
+    background-size: 350px 350px; /* Makes the image smaller */
     background-image: url(../images/texture.png);   
     /* border-top: 5px solid rgb(226, 198, 147);
     border-bottom: 5px solid rgb(226, 198, 147); */
     background-color: #fff0e660;
-
 }
 
-.ingredientes-box{
+.ingredients-box {
     display: flex; width: 100%; justify-content: space-around;
     flex-direction: column; 
 }
 
-.content-banner{
+.content-banner {
     position: absolute;
     width: 100%;
     height: auto;
     z-index: -1;
 }
 
-.img-banner{
+.img-banner {
     width: 100%;
     display: block;
     position: relative;
     z-index: -1;
 }
-.banner{
+
+.banner {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background:linear-gradient(180deg, transparent, #ffffff);
+    background: linear-gradient(180deg, transparent, #ffffff);
 }
-hr{
+
+hr {
     opacity: 0;
 }
 
-.ingredients-page{
+.ingredients-page {
     width: 100%; 
 }
 
@@ -394,15 +370,12 @@ hr{
     }
 }
 
-
-.menu-movil
-{
+.menu-mobile {
     display: block;
     width: 50px;
 }
 
-
-.menu-movil-ul {
+.menu-mobile-ul {
     position: fixed;
     top: 0;
     left: 0;
@@ -419,55 +392,49 @@ hr{
     align-items: end;
     font-size: 23px;
     display: none;
-  }
-  
-  .menu-movil-ul li {
+}
+
+.menu-mobile-ul li {
     list-style: none;
     margin-bottom: 10px;
-  }
-  
-  .menu-movil-ul a {
-    color: #fff; /* Color del texto */
+}
+
+.menu-mobile-ul a {
+    color: #fff; /* Text color */
     text-decoration: none;
-  }
+}
 
-
-.menu-pc
-{
+.menu-pc {
     display: none;
 }
 
-/* Tableta */
+/* Tablet */
 @media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
 
-body {
-    font-size: 18px;
+    .ingredients-page {
+        width: 98%; 
+    }
+
+    .ingredients-box {
+        display: flex; width: 90%; justify-content: space-around;
+        flex-direction: row; 
+    }
 }
 
-.ingredients-page{
-    width: 98%; 
-}
-
-.ingredientes-box{
-    display: flex; width: 90%; justify-content: space-around;
-    flex-direction: row; 
-}
-
-}
-
-/* Computadora portátil */
+/* Laptop */
 @media (min-width: 1024px) {
-
     body {
         font-size: 20px;
     }
- 
 
-    .flecha-menu{
+    .arrow-menu {
         opacity: 1;
     }
 
-    .flecha-menu{
+    .arrow-menu {
         position: absolute;
         top: 10%;
         right: 8%;
@@ -475,28 +442,25 @@ body {
         pointer-events: none;
     }
 
-
-    .prmary-text-container{
-        color: wheat;
-        /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+    .primary-text-container {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         margin-left: 30px;
     }
 
-    .prmary-text-container h1{
-
+    .primary-text-container h1 {
         font-weight: 400;
     }
 
-
-    .prmary-text-container p{
+    .primary-text-container p {
         margin-top: 20px;
         color: #a3a3a3;
-        width:50%;
+        width: 50%;
         font-weight: 300;
+        color: white;
 
     }
 
-    .frase{
+    .phrase {
         max-width: 710px;
         margin-top: 60px;
         font-family: "Allura", cursive;
@@ -505,50 +469,41 @@ body {
         font-size: 7vh;
         color: white;
         transform: rotateZ(5deg);
-
     }
 
-
-    .ingredients-page{
+    .ingredients-page {
         width: 80%; 
     }
 
-
-    .ingredientes-box{
+    .ingredients-box {
         display: flex; width: 100%; justify-content: space-around;
         flex-direction: row; 
-
     }
 
-
-    .menu-movil
-    {
+    .menu-mobile {
         display: none;
     }
 
-    .menu-pc
-    {
+    .menu-pc {
         display: flex;
     }
 
-    .recipe-content
-    {
+    .recipe-content {
         padding: 5rem;
     }
 }
 
-/* Escritorio grande */
+/* Large desktop */
 @media (min-width: 1440px) {
-   
     body {
         font-size: 22px;
     }
 
-    .flecha-menu{
+    .arrow-menu {
         opacity: 1;
     }
 
-    .flecha-menu{
+    .arrow-menu {
         position: absolute;
         top: 10%;
         right: 8%;
@@ -556,51 +511,43 @@ body {
         pointer-events: none;
     }
 
-
-    .prmary-text-container{
+    .primary-text-container {
         color: wheat;
         margin-left: 30px;
     }
 
-    .prmary-text-container h1{
-
+    .primary-text-container h1 {
         font-weight: 400;
     }
 
-
-    .prmary-text-container p{
+    .primary-text-container p {
         margin-top: 20px;
-        color: #a3a3a3;
-        width:50%;
+        /* color: #a3a3a3; */
+        width: 50%;
         font-weight: 300;
-
     }
 
-    .frase{
+    .phrase {
         max-width: 710px;
         margin-top: 60px;
         font-family: "Allura", cursive;
         font-weight: 400;
         font-style: normal;
         font-size: 7vh;
-        color: orange;
+        color: white;
         transform: rotateZ(5deg);
-
     }
 
-    .ingredients-page{
+    .ingredients-page {
         width: 65%; 
     }
 
-    .ingredientes-box{
+    .ingredients-box {
         display: flex; width: 100%; justify-content: space-around;
         flex-direction: row; 
-
     }
 
-
-    .menu-movil
-    {
+    .menu-mobile {
         display: none;
     }
 }
