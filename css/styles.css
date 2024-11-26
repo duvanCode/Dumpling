@@ -432,6 +432,7 @@ hr {
 .footer-column {
     width: 22%;
     margin-bottom: 32px;
+    text-align: start;
 }
 .footer-column h2 {
     font-size: 16px;
@@ -447,9 +448,6 @@ hr {
 .footer-column a {
     color: #4A3425;
     text-decoration: none;
-}
-.footer-column a:hover {
-    text-decoration: underline;
 }
 .footer-logo-social {
     
