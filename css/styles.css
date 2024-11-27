@@ -524,6 +524,26 @@ border-radius: 100px;
 .section-title{
     padding: 1rem;
 }
+.legal-card {
+    padding: 20px;
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+    background-color: #f9f9f9; /* Fondo para resaltar */
+    border: 1px solid #e0e0e0; /* Borde suave */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+.legal-card h2 {
+    margin-bottom: 10px;
+}
+.legal-card p {
+    margin-bottom: 15px;
+}
+.legal-card .content-a {
+    text-align: right;
+}
+.legal-container{
+    padding-top: 2rem;
+}
 
 @media (max-width: 768px) {
     .footer-column, .footer-logo-social {
