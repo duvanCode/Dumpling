@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    color: orange;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Menu styles */
+nav {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px; padding-right: 30px;
+    /* background-color: #333; */
+    color: white;
+    /* position: absolute; */
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    display: grid;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    transition: color 0.3s;
+    transition: all 0.5s;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Necessary to position the pseudo-element */
+}
+
+.a-before:hover {
+    color: black;
+    transition: all 0.5s;
+    left: 0; /* On hover, the underline moves to the left */
+    width: 100%;
+}
+
+.a-before:before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Adjusts the position of the underline */
+    height: 2px;
+    background-color: black; /* Underline color */
+    transition: all 0.3s ease-in-out; /* Animation on hover */
+    width: 0;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    transition: color 0.3s;
+    transition: all 0.5s;
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Necessary to position the pseudo-element */
+}
+
+.a-before:hover:before {
+    width: 100%;
+}
+
+.content-a{
+    position: relative;
+}
+
+/* Footer styles */
+footer {
+    background-color: #e9c99a;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+/* Scroll bar style */
+.scroll-box::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.scroll-box::-webkit-scrollbar:vertical {
+    width:3px;
+}
+
+.scroll-box::-webkit-scrollbar-button:increment,.scroll-box::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.scroll-box::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background-color: black;
+    /* border-radius: 100px; */
+    border: 2px solid transparent;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    /* border-radius: 3px;   */
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width:3px;
+}
+
+body::-webkit-scrollbar-button:increment,body::-webkit-scrollbar-button {
+    display: none;
+} 
+
+body::-webkit-scrollbar:horizontal {
+    height: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    /* border-radius: 100px; */
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+    /* border-radius: 10px;   */
+}
+
+/* Mobile first */
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+.arrow-menu{
+    opacity: 0;
+}
+
+.arrow-menu{
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    transform: rotateZ(-20deg);
+    pointer-events: none;
+}
+
+.primary-text-container{
+    color: wheat;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+    margin-left: 15px;
+    padding-top: 8rem;padding-top: 8rem;
+}
+
+.primary-text-container p{
+    margin-top: 20px;
+    margin-right: 10px;
+    color: #a3a3a3;
+    /* width:50%; */
+    font-weight: 300;
+}
+
+
+.content-page{
+    min-height: 100vh;
+    position: relative;
+    height: auto;
+    bottom: 0;
+    /* background: white; */
+    max-width: 1920px;
+}
+
+
+
+@media (max-width: 768px) {
+  
+}
+
+.menu-mobile {
+    display: block;
+    width: 50px;
+}
+
+.menu-mobile-ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: start;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: start;
+    align-items: end;
+    font-size: 23px;
+    display: none;
+}
+
+.menu-mobile-ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu-mobile-ul a {
+    color: black; /* Text color */
+    text-decoration: none;
+}
+
+.menu-pc {
+    display: none;
+}
+
+
+.footer {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.05);
+    /* color: #4A3425; */
+    /* padding: 48px 32px; */
+}
+
+.footer-logo-social {
+    
+    width: 22%;
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    border-left: 1px solid rgba(74, 52, 37, 0.2);
+    padding-left: 32px; 
+}
+.footer-logo {
+max-width: 60px;
+margin-bottom: 24px;
+border-radius: 100px;
+
+}
+.social-icons {
+    gap: 16px;
+}
+.social-icons a {
+    color: #4A3425;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-column, .footer-logo-social {
+        width: 100%;
+        border-left: none;
+        padding-left: 0;
+        align-items: center;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+
+
+
+
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+    body {
+        font-size: 22px;
+    }
+
+   
+}
+
+
