@@ -304,6 +304,9 @@ border-radius: 100px;
 transform: translateY(-7px);
 }
 
+
+
+
 @media (max-width: 768px) {
     .footer-column, .footer-logo-social {
         width: 100%;
@@ -425,6 +428,75 @@ transform: translateY(-7px);
     .menu-mobile {
         display: none;
     }
+
+
+    .content-page{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        width: 100%;
+    }
+
+    .content-page .first-content {
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* justify-content: center; */
+        position: relative;
+        width: 50%;
+        height: 50%;
+        /* border: 1px solid #ccc; */
+    }
+
+    .elemento {
+        position: absolute;
+
+    }
+
+    .content-page .first-content .back-img{
+        /* background: blue; */
+            z-index: 100; /* Elemento más abajo */
+            top: 0;
+            left: 0;
+            width: 40vh;
+            height: 50vh;
+            /* border: 1px solid black; */
+            background-image: url(https://cdn.pixabay.com/photo/2023/03/31/06/45/camera-7889301_1280.jpg);
+            background-size: cover; 
+            object-fit: cover;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          
+
+    }
+    .content-page .first-content .focus-text{
+        /* background: green; */
+            z-index: 200; /* Elemento en el medio */
+            /* top: 40%; */
+            /* left: 40%; */
+            bottom: -15vh;
+            max-width: 350px;
+            text-align: center;
+            font-size: 50px;
+            
+    }
+    .content-page .first-content .front-img{
+        /* background: red; */
+        background-image: url(./../images/firma.png);
+        background-size: cover; 
+        object-fit: cover;
+        z-index: 300; /* Elemento más arriba */
+        top: 50px;
+        right:0px;
+        width: 35vh;
+        height: 35vh;
+        transform: scale(1) rotate(-15deg);
+        /* border: 1px solid black; */
+
+
+
+    }
+
 }
 
 
