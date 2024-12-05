@@ -1,0 +1,47 @@
+
+.container {
+    display: grid;
+    /* min-height: 100vh; */
+    place-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-content {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+p {
+    color: black;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.email {
+    color: black;
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: black;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.footer{
+    display: none;
+}
