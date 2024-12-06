@@ -32,7 +32,9 @@ nav {
 
     /* padding: 1rem 0; */
     display: flex;
-   
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
     /* width: 100%; */
    
     justify-content: space-between;
@@ -42,6 +44,10 @@ nav .primary-logo {
     display: flex;
     justify-content: center;
     margin: 40px;
+}
+
+hr{
+    opacity: 0.1;
 }
 .nav-hr{
     display: none;
@@ -103,9 +109,9 @@ a {
     position: relative; /* Necessary to position the pseudo-element */
 }
 
-.a-before:hover:before {
+/* .a-before:hover:before {
     width: 100%;
-}
+} */
 
 .content-a{
     position: relative;
@@ -208,7 +214,7 @@ body {
 
 
 .content-page{
-    /* min-height: 100vh; */
+    min-height: 100vh;
     position: relative;
     height: auto;
     bottom: 0;
@@ -227,41 +233,12 @@ body {
 }
 
 .menu-mobile {
-    display: block;
-    width: 50px;
-}
-
-.menu-mobile-ul {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 9999;
-    display: grid;
-    grid-auto-flow: row;
-    justify-items: start;
-    padding: 20px;
-    box-sizing: border-box;
-    justify-content: start;
-    align-items: end;
-    font-size: 23px;
-    display: none;
-}
-
-.menu-mobile-ul li {
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-.menu-mobile-ul a {
-    color: black; /* Text color */
-    text-decoration: none;
+    /* display: block; */
+    width: 0px;
 }
 
 .menu-pc {
-    display: none;
+    display: flex;
 }
 
 
@@ -348,20 +325,20 @@ transform: translateY(-7px);
         width: 40vh;
         height: 50vh;
         /* border: 1px solid black; */
-        background-image: url(https://cdn.pixabay.com/photo/2023/03/31/06/45/camera-7889301_1280.jpg);
+        background-image: url(./../images/galery/DSC_3668.jpg);
         background-size: cover; 
         object-fit: cover;
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
       
 
 }
-.content-page .first-content .focus-text{
+.content-page .first-content .sachastinesphotography-text{
     /* background: green; */
         z-index: 200; /* Elemento en el medio */
         /* top: 40%; */
         /* left: 40%; */
         text-shadow: 2px 2px 5px black;
-
+        top: 4vh;
         bottom: -15vh;
         color: white;
         max-width: 350px;
@@ -371,15 +348,17 @@ transform: translateY(-7px);
 }
 .content-page .first-content .front-img{
     /* background: red; */
-    background-image: url(./../images/firma.png);
-    background-size: cover; 
-    object-fit: cover;
+    background-image: url(./../images/logo.png);
+    /* background-size: cover;  */
+    /* object-fit: cover; */
     z-index: 300; /* Elemento más arriba */
     top: 140px;
     right:-25px;
-    width: 35vh;
-    height: 35vh;
-    transform: scale(1) rotate(-15deg);
+    background-size: contain; /* Cambia a contain o a valores específicos según necesites */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; 
+    
+    
     /* border: 1px solid black; */
 
 
@@ -413,7 +392,7 @@ transform: translateY(-7px);
     transform: rotate(-2deg);
     background-size: cover; 
     object-fit: cover;
-    background-image: url(https://kzmjow68v6ohxubhsv2d.lite.vusercontent.net/placeholder.svg);
+    background-image: url(./../images/galery/DSC_2290.jpg);
     background-position: center; /* Centrar la imagen */
 }
 .item2 {
@@ -422,7 +401,7 @@ transform: translateY(-7px);
     margin-top: 4rem;
     background-size: cover; 
     object-fit: cover;
-    background-image: url(https://kzmjow68v6ohxubhsv2d.lite.vusercontent.net/placeholder.svg);
+    background-image: url(./../images/galery/DSC_4115-2.jpg);
     background-position: center; /* Centrar la imagen */
 }
 .item3 {
@@ -431,7 +410,7 @@ transform: translateY(-7px);
     margin-top: 2rem;
     background-size: cover; 
     object-fit: cover;
-    background-image: url(https://kzmjow68v6ohxubhsv2d.lite.vusercontent.net/placeholder.svg);
+    background-image: url(./../images/galery/DSC_7715.jpg);
     background-position: center; /* Centrar la imagen */
 }
 .item4 {
@@ -440,7 +419,7 @@ transform: translateY(-7px);
     margin-top: 4rem;
     background-size: cover; 
     object-fit: cover;
-    background-image: url(https://kzmjow68v6ohxubhsv2d.lite.vusercontent.net/placeholder.svg);
+    background-image: url(./../images/galery/DSC_4132.jpg);
     background-position: center; /* Centrar la imagen */
 }
 
@@ -531,14 +510,14 @@ transform: translateY(-7px);
             width: 40vh;
             height: 50vh;
             /* border: 1px solid black; */
-            background-image: url(https://cdn.pixabay.com/photo/2023/03/31/06/45/camera-7889301_1280.jpg);
+            background-image: url(./../images/galery/DSC_3668.jpg);
             background-size: cover; 
             object-fit: cover;
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
           
 
     }
-    .content-page .first-content .focus-text{
+    .content-page .first-content .sachastinesphotography-text{
         /* background: green; */
             z-index: 200; /* Elemento en el medio */
             /* top: 40%; */
@@ -553,7 +532,7 @@ transform: translateY(-7px);
     }
     .content-page .first-content .front-img{
         /* background: red; */
-        background-image: url(./../images/firma.png);
+        background-image: url(./../images/logo.png);
         background-size: cover; 
         object-fit: cover;
         z-index: 300; /* Elemento más arriba */
@@ -562,6 +541,10 @@ transform: translateY(-7px);
         width: 35vh;
         height: 35vh;
         transform: scale(1) rotate(-15deg);
+        background-size: contain; /* Cambia a contain o a valores específicos según necesites */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; 
+        
         /* border: 1px solid black; */
 
 
@@ -676,14 +659,14 @@ transform: translateY(-7px);
             width: 40vh;
             height: 50vh;
             /* border: 1px solid black; */
-            background-image: url(https://cdn.pixabay.com/photo/2023/03/31/06/45/camera-7889301_1280.jpg);
+            background-image: url(./../images/galery/DSC_3668.jpg);
             background-size: cover; 
             object-fit: cover;
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
           
 
     }
-    .content-page .first-content .focus-text{
+    .content-page .first-content .sachastinesphotography-text{
         /* background: green; */
             z-index: 200; /* Elemento en el medio */
             /* top: 40%; */
@@ -699,15 +682,19 @@ transform: translateY(-7px);
     }
     .content-page .first-content .front-img{
         /* background: red; */
-        background-image: url(./../images/firma.png);
-        background-size: cover; 
-        object-fit: cover;
+        background-image: url(./../images/logo.png);
+        /* background-size: cover;  */
+        /* object-fit: cover; */
         z-index: 300; /* Elemento más arriba */
         top: 50px;
         right:0px;
-        width: 35vh;
-        height: 35vh;
-        transform: scale(1) rotate(-15deg);
+        background-size: contain; /* Cambia a contain o a valores específicos según necesites */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; 
+        
+        /* width: 35vh; */
+        /* height: 35vh; */
+        /* transform: scale(.5) rotate(-15deg); */
         /* border: 1px solid black; */
 
 
@@ -811,14 +798,14 @@ transform: translateY(-7px);
             width: 40vh;
             height: 50vh;
             /* border: 1px solid black; */
-            background-image: url(https://cdn.pixabay.com/photo/2023/03/31/06/45/camera-7889301_1280.jpg);
+            background-image: url(./../images/galery/DSC_3668.jpg);
             background-size: cover; 
             object-fit: cover;
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
           
 
     }
-    .content-page .first-content .focus-text{
+    .content-page .first-content .sachastinesphotography-text{
         /* background: green; */
             z-index: 200; /* Elemento en el medio */
             /* top: 40%; */
@@ -834,15 +821,16 @@ transform: translateY(-7px);
     }
     .content-page .first-content .front-img{
         /* background: red; */
-        background-image: url(./../images/firma.png);
-        background-size: cover; 
-        object-fit: cover;
+        background-image: url(./../images/logo.png);
+        /* background-size: cover;  */
+        /* object-fit: cover; */
         z-index: 300; /* Elemento más arriba */
         top: 50px;
         right:0px;
-        width: 35vh;
-        height: 35vh;
-        transform: scale(1) rotate(-15deg);
+        background-size: contain; /* Cambia a contain o a valores específicos según necesites */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; 
+        
         /* border: 1px solid black; */
 
 

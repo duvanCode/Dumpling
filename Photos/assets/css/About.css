@@ -1,0 +1,73 @@
+
+.container {
+    margin: 10vh;
+    display: grid;
+    /* min-height: 100vh; */
+    /* background-color: black; */
+    place-items: center;
+    height: 40vh;
+}
+.profile-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* max-width: 1000px; */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.image-container {
+    display: flex;
+    /* justify-content: end; */
+    /* align-items: end; */
+    /* max-width: 50vh; */
+    /* width: 100%; */
+    min-width: 30%;
+    aspect-ratio: 1 / 1;
+    background-color: #333;
+    background-image: url('./../images/person.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.content {
+  
+    color: black;
+    padding: 20px 0;
+    margin-left: 2vh;
+}
+
+p {
+    
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    justify-content: start;
+}
+.social-icons a {
+    color: black;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .profile-card {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .content {
+        padding: 0;
+        display: grid;
+        align-content: center;
+    }
+}
+
+.footer{
+    display: none;
+}
