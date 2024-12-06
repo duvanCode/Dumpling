@@ -1,3 +1,7 @@
 # 1
     fuente: https://www.flaticon.es/
     recurso "./favicon.ico"
+
+# 2
+    fuente: https://www.flaticon.com/free-icons/back-arrow
+    recurso: "./assets/back.png"
