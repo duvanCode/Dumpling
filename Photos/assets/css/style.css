@@ -283,6 +283,24 @@ border-radius: 100px;
 /* .social-icons a svg::hover {
 
 } */
+.menu-mobile-ul li:first-child{
+    margin-bottom: 0;
+}
+
+.menu-mobile-ul li{
+    margin: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.menu-mobile-ul li:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+}
 
 .social-icon-item{
     color: white;
