@@ -13,16 +13,15 @@
 <body>
     <!-- Navigation menu -->
     <nav>
+        
         <a href="index.html" class="primary-logo">
             <div style="display: flex;justify-content: center;align-items: center;">
                 <img src="./assets/images/logo.png" alt="Home" style="width: 200px;">
-                <!-- <div style="width: 10px"></div> -->
-                <!-- <h1>sachastinesphotography</h1> -->
             </div>
         </a>
         
 
-        <!-- <img class="menu-mobile" src="./assets/svgs/list.svg" alt=""> -->
+        <img class="menu-mobile" src="./assets/svgs/list.svg" alt="">
 
 
 
@@ -35,6 +34,12 @@
        
 
 
+        <ul class="menu-mobile-ul">
+            <li><a class="a-before"><img class="menu-mobile-close" src="favicon.ico" alt="Home" style="height: 40px;"></a></li>
+            <li><a class="a-before" href="./pages/Portfolio.html">Portfolio</a></li>
+            <li><a class="a-before" href="./pages/About.html">About</a></li>
+            <li><a class="a-before" href="./pages/Contact.html">Contact</a></li>
+        </ul>
     </nav>
     
     <hr class="nav-hr">
@@ -53,14 +58,8 @@
                     
                 </div>
 
-
-
-
             </div>
 
-
-
-         
             <div class="grid-container">
                 <div class="grid-item item1"></div>
                 <div class="grid-item item2"></div>
@@ -100,6 +99,17 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
 
+        document.querySelector('.menu-mobile').addEventListener('click', (event) => {
+            document.querySelector('.menu-mobile-ul').style.display = 'block';
+        });
+
+        document.querySelector('.menu-mobile-close').addEventListener('click', (event) => {
+            document.querySelector('.menu-mobile-ul').style.display = 'none';
+        });
+    </script>
 </body>
 </html>
