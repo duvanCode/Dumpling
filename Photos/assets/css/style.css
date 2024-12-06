@@ -820,18 +820,16 @@ transform: translateY(-7px);
             
     }
     .content-page .first-content .front-img{
-        /* background: red; */
+      
         background-image: url(./../images/logo.png);
-        /* background-size: cover;  */
-        /* object-fit: cover; */
-        z-index: 300; /* Elemento más arriba */
+       
+        z-index: 300; 
         top: 50px;
         right:0px;
-        background-size: contain; /* Cambia a contain o a valores específicos según necesites */
-        background-position: center; /* Centra la imagen */
+        background-size: contain; 
+        background-position: center; 
         background-repeat: no-repeat; 
         
-        /* border: 1px solid black; */
 
 
 
