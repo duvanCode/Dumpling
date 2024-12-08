@@ -503,6 +503,7 @@ border-radius: 100px;
     display: grid;
     width: 100%;
     justify-content: end;
+    align-items: center;
 }
 
 
