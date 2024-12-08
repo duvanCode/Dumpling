@@ -1,11 +1,9 @@
 
 .container {
-    margin: 10vh;
     display: grid;
     /* min-height: 100vh; */
     /* background-color: black; */
     place-items: center;
-    height: 40vh;
 }
 .profile-card {
     display: grid;
@@ -37,10 +35,10 @@
 }
 
 p {
-    
     color: black;
     line-height: 1.6;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 .social-icons {
     display: grid;
@@ -66,8 +64,27 @@ p {
         display: grid;
         align-content: center;
     }
+    
+    .container {
+        margin: 0vh;
+    }
 }
 
-.footer{
-    display: none;
+@media (min-width: 1024px) {
+    .profile-card {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .content {
+        padding: 0;
+        display: grid;
+        align-content: center;
+    }
+    
+    .container {
+        margin: 0vh;
+    }
+    .container {
+        margin: 10vh;
+    }
 }

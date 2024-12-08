@@ -8,13 +8,6 @@
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4px;
-}
-
 .row {
     display: flex;
     overflow-x: auto;
@@ -145,7 +138,8 @@
 }
 
 p{
-    font-size: 20px
+    font-size: 20px;
+    text-align: justify;
 }
 
 .row{
