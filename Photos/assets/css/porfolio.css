@@ -8,8 +8,11 @@
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+
 .row {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
     overflow-x: auto;
     gap: 4px;
     padding-bottom: 4px;
@@ -26,7 +29,6 @@
 }
 
 .row img {
-    flex: 0 0 auto;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -34,12 +36,13 @@
 }
 
 .scroll-left {
-    flex-direction: row-reverse;
+    direction: rtl;
     margin-left: 0vh;
 }
 
 .scroll-left img {
     scroll-snap-align: end;
+    direction: ltr;
 }
 
 @media (min-width: 768px) {
@@ -47,22 +50,10 @@
         padding: 40px;
     }
 
-    h1 {
-        
-    }
-
     .scroll-left {
-        flex-direction: row-reverse;
         margin-left: 10vh;
     }
 }
-
-
-
-
-
-
-
 
 .modal {
     position: fixed;
@@ -92,57 +83,46 @@
     cursor: pointer;
 }
 
-
-
-.portfolio-grid { /* Cambiado a portfolio-grid */
+.portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático en móviles */
-    gap: 26px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 26px;
 }
 
 .grid-item {
-    text-align: start; /* Centrar el texto */
+    text-align: start;
     background-color: rgba(0, 0, 0, 0.05);
     padding: 15px;
     border-radius: 10px;
 }
 
-.grid-item h3{
+.grid-item h3 {
     margin-top: 5px;
     margin-bottom: 5px;
-
 }
 
 .grid-item img {
-    width: 100%; /* Hacer que las imágenes ocupen todo el ancho del contenedor */
-    height: auto; /* Mantener la proporción de las imágenes */
-    border-radius: 8px; /* Bordes redondeados */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-
-.grid-item:hover{
+.grid-item:hover {
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;        transform: translateY(-15px) rotate(0deg) !important;
-
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transform: translateY(-15px) rotate(0deg) !important;
 }
 
-
-.container{
+.container {
     height: 100%;
     min-height: 100vh;
-
 }
 
-.content-page{
+.content-page {
     min-height: 100vh;
 }
 
-p{
+p {
     font-size: 20px;
     text-align: justify;
-}
-
-.row{
-    display: flex;
-    
 }
