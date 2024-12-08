@@ -526,6 +526,11 @@ border-radius: 100px;
 }
 
 
+.w-100{
+    max-width: 100%;
+}
+
+
 @media (max-width: 768px) {
     .footer-column, .footer-logo-social {
         width: 100%;
