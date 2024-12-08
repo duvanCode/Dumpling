@@ -532,6 +532,7 @@ border-radius: 100px;
 
 .title{
     padding:1rem;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
