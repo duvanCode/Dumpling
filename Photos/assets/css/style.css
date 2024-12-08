@@ -530,6 +530,9 @@ border-radius: 100px;
     width: 100%;
 }
 
+.title{
+    padding:1rem;
+}
 
 @media (max-width: 768px) {
     .footer-column, .footer-logo-social {
