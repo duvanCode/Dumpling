@@ -53,3 +53,20 @@ p {
 .social-icons a:hover {
     opacity: 0.8;
 }
+
+.home-img{
+    width: 200px;
+}
+
+
+@media (max-width: 425px) {
+    
+    .contact-content{
+        font-size: 10px;
+    }
+
+    .home-img{
+        width: 100px;
+    }
+
+}

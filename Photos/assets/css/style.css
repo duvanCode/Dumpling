@@ -19,7 +19,6 @@ h1, h2, h3, p{
     color: black;
 }
 
-/* Basic styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,19 +29,17 @@ body {
 hr{
     opacity: .1;
 }
-/* Menu styles */
 nav {
-
-    /* padding: 1rem 0; */
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
     padding-right: 3vh;
 }
+
 nav .primary-logo {
-    display: flex;
-    justify-content: center;
     margin: 40px;
 }
+
 .nav-hr{
     display: none;
     margin: 0;
@@ -77,8 +74,8 @@ nav ul li a {
     font-weight: 300;
     transition: color 0.3s;
     transition: all 0.5s;
-    text-decoration: none; /* Remove default underline */
-    position: relative; /* Necessary to position the pseudo-element */
+    text-decoration: none;
+    position: relative;
 }
 
 
@@ -89,8 +86,8 @@ a {
     font-weight: bold;
     transition: color 0.3s;
     transition: all 0.5s;
-    text-decoration: none; /* Remove default underline */
-    position: relative; /* Necessary to position the pseudo-element */
+    text-decoration: none;
+    position: relative; 
 }
 
 .a-before:hover:before {
@@ -203,11 +200,11 @@ body {
     height: auto;
     bottom: 0;
     /* background: white; */
-    max-width: 1920px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    place-items: center;
 }
 
 
@@ -291,23 +288,17 @@ transform: translateY(-7px);
 
 
 
-.content-page{
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    width: 100%;
-}
+
 
 .content-page .first-content {
     margin-top: 45px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     align-items: center;
-    /* justify-content: center; */
     position: relative;
     width: 90%;
     height: 50%;
-    /* border: 1px solid #ccc; */
+    max-width: 800px;
 }
 
 .elemento {
@@ -317,10 +308,10 @@ transform: translateY(-7px);
 
 .content-page .first-content .back-img{
     /* background: blue; */
-        z-index: 100; /* Elemento más abajo */
+        z-index: 100;
         top: 0;
         left: 0;
-        width: 40vh;
+        width: 100%;
         height: 50vh;
         /* border: 1px solid black; */
         background-image: url(./../images/galery/DSC_3668.jpg);
@@ -332,16 +323,17 @@ transform: translateY(-7px);
 }
 .content-page .first-content .sachastinesphotography-text{
     /* background: green; */
-        z-index: 200; /* Elemento en el medio */
+        z-index: 301;
         /* top: 40%; */
         /* left: 40%; */
         text-shadow: 2px 2px 5px black;
 
-        bottom: -15vh;
+        bottom: -25vh;
         color: white;
         max-width: 350px;
         text-align: center;
         font-size: 50px;
+
         
 }
 .content-page .first-content .front-img{
@@ -349,11 +341,11 @@ transform: translateY(-7px);
     background-image: url(./../images/galery/DSC_6179.jpg);
     /* background-size: cover;  */
     /* object-fit: cover; */
-    z-index: 300; /* Elemento más arriba */
+    z-index: 300;
     top: 140px;
     right:-25px;
-    background-size: contain; /* Cambia a contain o a valores específicos según necesites */
-    background-position: center; /* Centra la imagen */
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat; 
     
     
@@ -391,7 +383,7 @@ transform: translateY(-7px);
     background-size: cover; 
     object-fit: cover;
     background-image: url(./../images/galery/DSC_2290.jpg);
-    background-position: center; /* Centrar la imagen */
+    background-position: center;
 }
 .item2 {
     height: 250px;
@@ -400,7 +392,7 @@ transform: translateY(-7px);
     background-size: cover; 
     object-fit: cover;
     background-image: url(./../images/galery/DSC_4115-2.jpg);
-    background-position: center; /* Centrar la imagen */
+    background-position: center;
 }
 .item3 {
     height: 300px;
@@ -409,7 +401,7 @@ transform: translateY(-7px);
     background-size: cover; 
     object-fit: cover;
     background-image: url(./../images/galery/DSC_7715.jpg);
-    background-position: center; /* Centrar la imagen */
+    background-position: center;
 }
 .item4 {
     height: 350px;
@@ -418,12 +410,11 @@ transform: translateY(-7px);
     background-size: cover; 
     object-fit: cover;
     background-image: url(./../images/galery/DSC_4132.jpg);
-    background-position: center; /* Centrar la imagen */
+    background-position: center;
 }
 
 
 
-/* Footer styles */
 footer {
     background-color: black;
 
@@ -442,9 +433,9 @@ footer {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 .footer-column {
     width: 22%;
@@ -508,8 +499,8 @@ border-radius: 100px;
 
 
 
-.content-img{
-    display: flex;
+.content-img {
+    display: grid;
     width: 100%;
     justify-content: end;
 }
@@ -528,6 +519,14 @@ border-radius: 100px;
 
 .w-100{
     max-width: 100%;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.grid2 img{
+    width: 100%;
 }
 
 
@@ -549,7 +548,7 @@ border-radius: 100px;
 
 
     .grid {
-        grid-template-columns: repeat(2, 1fr); /* Sigue teniendo 2 columnas */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .item4 {
@@ -576,38 +575,13 @@ border-radius: 100px;
 
 
 
-
-    nav{
-        flex-direction: column;
-        justify-content: space-between;
-        /* margin-right: 5%!important;
-        margin-left: 5%!important; */
-    }
-
-    .nav-hr{
-        display: flex;
-        margin-top: 50px;
-        margin-right: 5%!important;
-        margin-left: 5%!important;
-    }
-
-    .content-page{
-        display: flex;
-        /* align-items: center; */
-        justify-content: center;
-        width: 100%;
-    }
-
     .content-page .first-content {
         margin-top: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* justify-content: center; */
+        display: grid;
+        place-items: center;
         position: relative;
         width: 90%;
         height: 50%;
-        /* border: 1px solid #ccc; */
     }
 
     .elemento {
@@ -616,8 +590,7 @@ border-radius: 100px;
     }
 
     .content-page .first-content .back-img{
-        /* background: blue; */
-            z-index: 100; /* Elemento más abajo */
+            z-index: 100;
             top: 0;
             left: 0;
             width: 40vh;
@@ -631,8 +604,7 @@ border-radius: 100px;
 
     }
     .content-page .first-content .sachastinesphotography-text{
-        /* background: green; */
-            z-index: 200; /* Elemento en el medio */
+            z-index: 301; 
             /* top: 40%; */
             /* left: 40%; */
             text-shadow: none;
@@ -644,18 +616,17 @@ border-radius: 100px;
             
     }
     .content-page .first-content .front-img{
-        /* background: red; */
         background-image: url(./../images/galery/DSC_6179.jpg);
         background-size: cover; 
         object-fit: cover;
-        z-index: 300; /* Elemento más arriba */
+        z-index: 300;
         top: 50px;
         right:0px;
         width: 35vh;
         height: 35vh;
         transform: scale(1) rotate(-15deg);
-        background-size: contain; /* Cambia a contain o a valores específicos según necesites */
-        background-position: center; /* Centra la imagen */
+        background-size: contain; 
+        background-position: center;
         background-repeat: no-repeat; 
         
         /* border: 1px solid black; */
@@ -714,19 +685,9 @@ border-radius: 100px;
 
     }
 
- 
-    nav{
-        flex-direction: column;
-  
-    }
+
     
 
-    .nav-hr{
-        display: flex;
-        margin-top: 50px;
-        margin-right: 5%!important;
-        margin-left: 5%!important;
-    }
 
     .menu-mobile {
         display: none;
@@ -742,25 +703,15 @@ border-radius: 100px;
     }
 
 
-
-    .content-page{
-        display: flex;
-        /* align-items: center; */
-        justify-content: center;
-        width: 100%;
-    }
-
     .content-page .first-content {
         margin-top: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* justify-content: center; */
+        display: grid;
+        place-items: center;
         position: relative;
-        width: 85%;
+        width: 66%;
         height: 50%;
-        /* border: 1px solid #ccc; */
     }
+
 
     .elemento {
         position: absolute;
@@ -768,8 +719,7 @@ border-radius: 100px;
     }
 
     .content-page .first-content .back-img{
-        /* background: blue; */
-            z-index: 100; /* Elemento más abajo */
+            z-index: 100;
             top: 0;
             left: 0;
             width: 40vh;
@@ -783,8 +733,7 @@ border-radius: 100px;
 
     }
     .content-page .first-content .sachastinesphotography-text{
-        /* background: green; */
-            z-index: 200; /* Elemento en el medio */
+            z-index: 301;
             /* top: 40%; */
             /* left: 40%; */
             color: black;
@@ -797,15 +746,14 @@ border-radius: 100px;
             
     }
     .content-page .first-content .front-img{
-        /* background: red; */
         background-image: url(./../images/galery/DSC_6179.jpg);
         /* background-size: cover;  */
         /* object-fit: cover; */
-        z-index: 300; /* Elemento más arriba */
+        z-index: 300; 
         top: 50px;
         right:0px;
-        background-size: contain; /* Cambia a contain o a valores específicos según necesites */
-        background-position: center; /* Centra la imagen */
+        background-size: contain; 
+        background-position: center;
         background-repeat: no-repeat; 
         
         /* width: 35vh; */
@@ -833,15 +781,6 @@ border-radius: 100px;
     .item4 {
 
         margin-top: -4rem;
-    }
-    nav{
-        flex-direction: column;
-    }
-    .nav-hr{
-        display: flex;
-        margin-top: 50px;
-        margin-right: 5%!important;
-        margin-left: 5%!important;
     }
 
     .arrow-menu {
@@ -876,35 +815,13 @@ border-radius: 100px;
         display: none;
     }
 
-
-
-    .content-page{
-        display: flex;
-        /* align-items: center; */
-        justify-content: center;
-        width: 100%;
-    }
-
-    .content-page .first-content {
-        margin-top: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* justify-content: center; */
-        position: relative;
-        width: 50%;
-        height: 50%;
-        /* border: 1px solid #ccc; */
-    }
-
     .elemento {
         position: absolute;
 
     }
 
     .content-page .first-content .back-img{
-        /* background: blue; */
-            z-index: 100; /* Elemento más abajo */
+            z-index: 100;
             top: 0;
             left: 0;
             width: 40vh;
@@ -914,12 +831,14 @@ border-radius: 100px;
             background-size: cover; 
             object-fit: cover;
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-          
+            
+            
+        }
 
-    }
+
     .content-page .first-content .sachastinesphotography-text{
         /* background: green; */
-            z-index: 200; /* Elemento en el medio */
+            z-index: 301;
             /* top: 40%; */
             text-shadow: none;
             /* left: 40%; */
@@ -936,11 +855,11 @@ border-radius: 100px;
         background-image: url(./../images/galery/DSC_6179.jpg);
         /* background-size: cover;  */
         /* object-fit: cover; */
-        z-index: 300; /* Elemento más arriba */
+        z-index: 300;
         top: 50px;
         right:0px;
-        background-size: contain; /* Cambia a contain o a valores específicos según necesites */
-        background-position: center; /* Centra la imagen */
+        background-size: contain; 
+        background-position: center; 
         background-repeat: no-repeat; 
         
         /* border: 1px solid black; */
@@ -955,7 +874,14 @@ border-radius: 100px;
 
 
 
+@media (min-width: 1440px) {
 
+    .content-page .first-content {
+
+        max-width: 50%;
+            
+    }
+}
 
 
 
